@@ -19,7 +19,7 @@
 
 ### Home <a name="head_Home"></a>
 Documentation generated using the metadata from ABA2017 database.</br>
-_Documentation created: 30/10/2017 14:58:03_
+_Documentation created: 30/10/2017 18:26:16_
 
 ### Extraction phase <a name="head_Extraction_phase"></a>
 ####  Loaded Tables <a name="head_Loaded_tables"></a>
@@ -36,7 +36,7 @@ _Documentation created: 30/10/2017 14:58:03_
 **Information Source DB:** ABA2017_MD </br>
 **Information Source Table:** md.extract_phase_info
 
-[Wiki Extraction Phase](http://www.solidq.com/wiki/aba/Extraction%20phase.aspx)
+[Wiki Extraction Phase](http://www.solidq.com/wiki/aba/etl-with-aba-framework)
 
 ####  Connections <a name="head_Connections"></a>
 | Connection name | Connection string | DB Schemas |
@@ -130,7 +130,7 @@ _Documentation created: 30/10/2017 14:58:03_
 **Information Source DB:** ABA2017_MD </br>
 **Information Source Table:** md.extract_phase_info </br>
 
-[Wiki E Phase naming conventions](http://www.solidq.com/wiki/aba/Extraction%20phase.aspx#naming)
+[Wiki E Phase naming conventions](http://www.solidq.com/wiki/aba/etl-with-aba-framework#naming)
 
 ####  Active for load / creation / orquestator <a name="head_active_load_creation_orquestator"></a>
 | Source object schema | Source object name | Active for load | Active for creation | Active for orquestator |
@@ -146,7 +146,7 @@ _Documentation created: 30/10/2017 14:58:03_
 **Information Source DB:** ABA2017_MD </br>
 **Information Source Table:** md.extract_phase_info </br>
 
-[Wiki Extraction Phase Info columns](http://www.solidq.com/wiki/aba/Framework%20Databases.aspx#epi)
+[Wiki Extraction Phase Info columns](http://www.solidq.com/wiki/aba/framework-databases#epi)
 
 ### Load phase <a name="head_Load_phase"></a>
 ####  Dimensions <a name="head_dimensions"></a>
@@ -156,8 +156,8 @@ _Documentation created: 30/10/2017 14:58:03_
 **Information Source DB:** ABA2017_MD </br>
 **Information Source Table:** md.dimension_load_phase_info
 
-[Wiki Loading Phase](http://www.solidq.com/wiki/aba/Loading%20phase.aspx) </br>
-[Wiki Naming Conventions Loading Phase](http://www.solidq.com/wiki/aba/Loading%20phase.aspx#naming)
+[Wiki Loading Phase](http://www.solidq.com/wiki/aba/etl-with-aba-framework#loading) </br>
+[Wiki Naming Conventions Loading Phase](http://www.solidq.com/wiki/aba/etl-with-aba-framework#naming-loading)
 
 ####  Fact tables <a name="head_Fact_tables"></a>
 | Source table name | Destination table name | Active for creation | Active for load | Primary key columns | Detect deletes | Order group |
@@ -167,8 +167,8 @@ _Documentation created: 30/10/2017 14:58:03_
 **Information Source DB:** ABA2017_MD </br>
 **Information Source Table:** md.load_phase_info
 
-[Wiki Loading Phase](http://www.solidq.com/wiki/aba/Loading%20phase.aspx) </br>
-[Wiki Naming Conventions Loading Phase](http://www.solidq.com/wiki/aba/Loading%20phase.aspx#naming)
+[Wiki Loading Phase](http://www.solidq.com/wiki/aba/etl-with-aba-framework#loading) </br>
+[Wiki Naming Conventions Loading Phase](http://www.solidq.com/wiki/aba/etl-with-aba-framework#naming-loading)
 
 ####  SCD <a name="head_SCD"></a>
 | Source table name | Destination column name | Change type | Type description |
@@ -178,7 +178,7 @@ _Documentation created: 30/10/2017 14:58:03_
 **Information Source DB:** ABA2017_MD </br>
 **Information Source Table:** md.dimensions_load_phase_info_columns
 
-[Wiki Slowly Change Dimensions](http://www.solidq.com/wiki/aba/Loading%20phase.aspx#scd)
+[Wiki Slowly Change Dimensions](http://www.solidq.com/wiki/aba/etl-with-aba-framework#scd)
 
 ####  Data types source vs dwh <a name="head_Data_types_source_vs_dwh"></a>
 Under construction
@@ -191,7 +191,7 @@ Under construction
 #### Test Results
 
 
-[Wiki Unit Tests](http://www.solidq.com/wiki/aba/Main%20Characteristics.aspx#unit-tests)
+[Wiki Unit Tests](http://www.solidq.com/wiki/aba/automatedtesting/#main_characteristics)
 
 ### Log Table <a name="head_Log"></a>
 | Schema name | Table name | Type | Start date | End date | Status | Loaded by | Inserted rows | Updated rows | Deleted rows |
@@ -238,4 +238,4 @@ Under construction
 | stg |  Marketing | I | 26/10/2017 12:29:47 | 26/10/2017 12:29:48 | F | MicrosoftAccount\pcl23ua@gmail.com | <inserted_rows>0 | <updated_rows>0 |  |
 
 
-[Wiki LOG Database](http://www.solidq.com/wiki/aba/Framework%20Databases.aspx#log-database)
+[Wiki LOG Database](http://www.solidq.com/wiki/aba/framework-databases#log-database)

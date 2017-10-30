@@ -12,22 +12,25 @@
   * [bi.stores](#head_bi.stores)
   * [bi.titleauthor](#head_bi.titleauthor)
   * [bi.titles](#head_bi.titles)
+  * [mt.newspapers](#head_mt.newspapers)
   
 
 ## Info <a name="head_info"></a>
-**Abamulti_HLP**
+**ABA_2017_HLP**
 
 DB Info:
+
 | Name | Size | Owner | id | Created | Status | Compatibility level |
 | ---- | ---- | ----- | -- | ------- | ------ | ------------------- |
-| Abamulti_HLP |     300.00 MB| sa| 6| Oct  8 2017 | Status=ONLINE, Updateability=READ_WRITE, UserAccess=MULTI_USER, Recovery=SIMPLE, Version=852, Collation=Modern_Spanish_CI_AS, SQLSortOrder=0, IsAutoCreateStatistics, IsAutoUpdateStatistics, IsFullTextEnabled | 130 |
+| ABA_2017_HLP |     300.00 MB| sa| 6| Oct 26 2017 | Status=ONLINE, Updateability=READ_WRITE, UserAccess=MULTI_USER, Recovery=SIMPLE, Version=852, Collation=Modern_Spanish_CI_AS, SQLSortOrder=0, IsAutoCreateStatistics, IsAutoUpdateStatistics, IsFullTextEnabled | 130 |
 
 Files:
+
 | Name | id | filename | filegroup | size | maxsize | growth |
 | ---- | -- | -------- | --------- | ---- | ------- | ------ |
-| Abamulti_HLP_sys | 1 | C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\Abamulti_HLP_sys.mdf | PRIMARY | 102400 KB | Unlimited | 0 KB |
-| Abamulti_HLP_log | 2 | C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\Abamulti_HLP_log.ldf |  | 102400 KB | 2147483648 KB | 102400 KB |
-| Abamulti_HLP_data | 3 | C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\Abamulti_HLP_data.ndf | SECONDARY | 102400 KB | Unlimited | 102400 KB |
+| ABA_2017_HLP_sys | 1 | C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\ABA_2017_HLP_sys.mdf | PRIMARY | 102400 KB | Unlimited | 0 KB |
+| ABA_2017_HLP_log | 2 | C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\ABA_2017_HLP_log.ldf |  | 102400 KB | 2147483648 KB | 102400 KB |
+| ABA_2017_HLP_data | 3 | C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\ABA_2017_HLP_data.ndf | SECONDARY | 102400 KB | Unlimited | 102400 KB |
 
 ### Tablas <a name="head_tablas"></a>
 
@@ -37,11 +40,13 @@ Files:
 **bi.authors** <a name="head_bi.authors"></a>
 
 View info:
+
 | View name | Schema | Owner | Creation date | Rows |
 | --------- | ------ | ----- | ------------- | ---- |
-| authors | bi | dbo | 08/10/2017 19:59:01 | 23 |
+| authors | bi | dbo | 26/10/2017 10:54:21 | 23 |
 
 Columns:
+
 | Columnn name | Type | Length | Nullable | Collation | TrimTrailingBlanks |
 | ------------ | ---- | ------ | -------- | --------- | ------------------ |
 | pk_au_id | varchar | 11 | no | Modern_Spanish_CI_AS | no |
@@ -84,11 +89,13 @@ CREATE VIEW bi.authors as SELECT [au_id] as pk_au_id
 **bi.publishers** <a name="head_bi.publishers"></a>
 
 View info:
+
 | View name | Schema | Owner | Creation date | Rows |
 | --------- | ------ | ----- | ------------- | ---- |
-| publishers | bi | dbo | 08/10/2017 19:59:01 | 8 |
+| publishers | bi | dbo | 26/10/2017 10:54:21 | 8 |
 
 Columns:
+
 | Columnn name | Type | Length | Nullable | Collation | TrimTrailingBlanks |
 | ------------ | ---- | ------ | -------- | --------- | ------------------ |
 | pk_pub_id | char | 4 | no | Modern_Spanish_CI_AS | no |
@@ -121,17 +128,19 @@ CREATE VIEW bi.publishers as SELECT [pub_id] as pk_pub_id
 **bi.sales** <a name="head_bi.sales"></a>
 
 View info:
+
 | View name | Schema | Owner | Creation date | Rows |
 | --------- | ------ | ----- | ------------- | ---- |
-| sales | bi | dbo | 08/10/2017 19:59:01 | 21 |
+| sales | bi | dbo | 26/10/2017 10:54:21 | 21 |
 
 Columns:
+
 | Columnn name | Type | Length | Nullable | Collation | TrimTrailingBlanks |
 | ------------ | ---- | ------ | -------- | --------- | ------------------ |
 | pk_id | varchar | 30 | no | Modern_Spanish_CI_AS | no |
 | stor_id | char | 4 | no | Modern_Spanish_CI_AS | no |
 | ord_num | varchar | 20 | no | Modern_Spanish_CI_AS | no |
-| incremental | bigint | 8 | yes |  | (n/a) |
+| ord_date | datetime | 8 | no |  | (n/a) |
 | qty | smallint | 2 | no |  | (n/a) |
 | payterms | varchar | 12 | no | Modern_Spanish_CI_AS | no |
 | title_id | varchar | 6 | no | Modern_Spanish_CI_AS | no |
@@ -143,11 +152,11 @@ Creation SQL Script:
 
 CREATE VIEW bi.sales as SELECT  CONCAT(stor_id,ord_num,title_id) as pk_id
 
-	  ,[stor_id]
+	,[stor_id]
 
       ,[ord_num] 
 
-      ,CAST([ord_date] as bigint)incremental
+      ,[ord_date]
 
       ,[qty]
 
@@ -164,11 +173,13 @@ CREATE VIEW bi.sales as SELECT  CONCAT(stor_id,ord_num,title_id) as pk_id
 **bi.stores** <a name="head_bi.stores"></a>
 
 View info:
+
 | View name | Schema | Owner | Creation date | Rows |
 | --------- | ------ | ----- | ------------- | ---- |
-| stores | bi | dbo | 08/10/2017 19:59:01 | 6 |
+| stores | bi | dbo | 26/10/2017 10:54:21 | 6 |
 
 Columns:
+
 | Columnn name | Type | Length | Nullable | Collation | TrimTrailingBlanks |
 | ------------ | ---- | ------ | -------- | --------- | ------------------ |
 | pk_stor_id | char | 4 | no | Modern_Spanish_CI_AS | no |
@@ -204,11 +215,13 @@ CREATE VIEW bi.stores as SELECT [stor_id] as pk_stor_id
 **bi.titleauthor** <a name="head_bi.titleauthor"></a>
 
 View info:
+
 | View name | Schema | Owner | Creation date | Rows |
 | --------- | ------ | ----- | ------------- | ---- |
-| titleauthor | bi | dbo | 08/10/2017 19:59:01 | 18 |
+| titleauthor | bi | dbo | 26/10/2017 10:54:21 | 18 |
 
 Columns:
+
 | Columnn name | Type | Length | Nullable | Collation | TrimTrailingBlanks |
 | ------------ | ---- | ------ | -------- | --------- | ------------------ |
 | pk_id | varchar | 17 | no | Modern_Spanish_CI_AS | no |
@@ -241,11 +254,13 @@ CREATE VIEW bi.titleauthor as SELECT CONCAT(au_id,title_id) as pk_id
 **bi.titles** <a name="head_bi.titles"></a>
 
 View info:
+
 | View name | Schema | Owner | Creation date | Rows |
 | --------- | ------ | ----- | ------------- | ---- |
-| titles | bi | dbo | 08/10/2017 19:59:01 | 18 |
+| titles | bi | dbo | 26/10/2017 10:54:21 | 18 |
 
 Columns:
+
 | Columnn name | Type | Length | Nullable | Collation | TrimTrailingBlanks |
 | ------------ | ---- | ------ | -------- | --------- | ------------------ |
 | pk_title_id | varchar | 6 | no | Modern_Spanish_CI_AS | no |
@@ -285,6 +300,39 @@ CREATE VIEW bi.titles as SELECT [title_id] as pk_title_id
       ,[pubdate]
 
   FROM pubs.[dbo].[titles]
+
+```
+</br>
+
+
+**mt.newspapers** <a name="head_mt.newspapers"></a>
+
+View info:
+
+| View name | Schema | Owner | Creation date | Rows |
+| --------- | ------ | ----- | ------------- | ---- |
+| newspapers | mt | dbo | 26/10/2017 10:54:21 | 6 |
+
+Columns:
+
+| Columnn name | Type | Length | Nullable | Collation | TrimTrailingBlanks |
+| ------------ | ---- | ------ | -------- | --------- | ------------------ |
+| pk_np_id | int | 4 | no |  | (n/a) |
+| name | varchar | 80 | no | Modern_Spanish_CI_AS | no |
+| country | varchar | 30 | no | Modern_Spanish_CI_AS | no |
+
+
+Creation SQL Script:
+```
+
+
+CREATE VIEW mt.newspapers as SELECT [np_id] as pk_np_id
+
+      ,[name]
+
+	  ,[country]
+
+  FROM newspapers.[dbo].newspapers
 
 ```
 </br>

@@ -5,7 +5,7 @@
 
 * [Info](#head_info)
 * [Tables](#head_tables)
-  * [dbo.employee](#dbo_employee)
+  * [dbo.employee](#dbo.employee)
   
 * [Views](#head_views)
   
@@ -28,7 +28,7 @@ Files:
 
 ### Tables <a name='head_tables'>
 
-#### dbo.employee <a name='dbo_employee'>
+#### dbo.employee <a name='dbo.employee'>
 
 Table info:
 

@@ -5,15 +5,15 @@
 
 * [Info](#head_info)
 * [Tables](#head_tables)
-  * [stg.newspapers](#stg_newspapers)
-  * [stg.newspapers$Changes](#stg_newspapers_Changes)
-  * [stg.newspapers$Errors](#stg_newspapers_Errors)
-  * [stg.employee](#stg_employee)
-  * [stg.employee$Changes](#stg_employee_Changes)
-  * [stg.employee$Errors](#stg_employee_Errors)
+  * [stg.newspapers](#stg.newspapers)
+  * [stg.newspapers$Changes](#stg.newspapers_Changes)
+  * [stg.newspapers$Errors](#stg.newspapers_Errors)
+  * [stg.employee](#stg.employee)
+  * [stg.employee$Changes](#stg.employee_Changes)
+  * [stg.employee$Errors](#stg.employee_Errors)
   
 * [Views](#head_views)
-  * [etl.vw_dim_newspapers](#etl_vw_dim_newspapers)
+  * [etl.vw_dim_newspapers](#etl.vw_dim_newspapers)
   
 
 ## Info <a name='head_info'>
@@ -35,7 +35,7 @@ Files:
 
 ### Tables <a name='head_tables'>
 
-#### stg.newspapers <a name='stg_newspapers'>
+#### stg.newspapers <a name='stg.newspapers'>
 
 Table info:
 
@@ -67,7 +67,7 @@ Logs:
 | DWH | newspapers | I | 02/11/2017 15:57:08 | 02/11/2017 15:57:09 | S | DESKTOP-HCA06TJ\Pablo Corral | 6 | 0 | 0 |
 | stg | newspapers | I | 02/11/2017 15:51:51 | 02/11/2017 15:51:52 | S | DESKTOP-HCA06TJ\Pablo Corral | 6 | 0 | 0 |
 
-#### stg.newspapers$Changes <a name='stg_newspapers_Changes'>
+#### stg.newspapers$Changes <a name='stg.newspapers_Changes'>
 
 Table info:
 
@@ -97,7 +97,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.newspapers$Errors <a name='stg_newspapers_Errors'>
+#### stg.newspapers$Errors <a name='stg.newspapers_Errors'>
 
 Table info:
 
@@ -127,7 +127,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.employee <a name='stg_employee'>
+#### stg.employee <a name='stg.employee'>
 
 Table info:
 
@@ -164,7 +164,7 @@ Logs:
 | stg | employee | I | 16/11/2017 16:14:47 | 16/11/2017 16:14:48 | S | DESKTOP-HCA06TJ\Pablo Corral | 0 | 0 | 1 |
 | stg | employee | I | 16/11/2017 16:05:11 | 16/11/2017 16:05:12 | S | DESKTOP-HCA06TJ\Pablo Corral | 43 | 0 | 0 |
 
-#### stg.employee$Changes <a name='stg_employee_Changes'>
+#### stg.employee$Changes <a name='stg.employee_Changes'>
 
 Table info:
 
@@ -199,7 +199,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.employee$Errors <a name='stg_employee_Errors'>
+#### stg.employee$Errors <a name='stg.employee_Errors'>
 
 Table info:
 
@@ -237,7 +237,7 @@ Logs:
 
 ### Views <a name='head_views'>
 
-#### etl.vw_dim_newspapers <a name='etl_vw_dim_newspapers'>
+#### etl.vw_dim_newspapers <a name='etl.vw_dim_newspapers'>
 
 View info:
 

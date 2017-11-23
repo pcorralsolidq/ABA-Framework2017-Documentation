@@ -5,18 +5,18 @@
 
 * [Info](#head_info)
 * [Tables](#head_tables)
-  * [dim.author](#dim_author)
-  * [dim.author$Changes](#dim_author_Changes)
-  * [dim.newspapers](#dim_newspapers)
-  * [dim.newspapers$Changes](#dim_newspapers_Changes)
-  * [dim.publisher](#dim_publisher)
-  * [dim.publisher$Changes](#dim_publisher_Changes)
-  * [dim.store](#dim_store)
-  * [dim.store$Changes](#dim_store_Changes)
-  * [dim.title](#dim_title)
-  * [dim.title$Changes](#dim_title_Changes)
-  * [fact.sales](#fact_sales)
-  * [fact.sales$Changes](#fact_sales_Changes)
+  * [dim.author](#dim.author)
+  * [dim.author$Changes](#dim.author_Changes)
+  * [dim.newspapers](#dim.newspapers)
+  * [dim.newspapers$Changes](#dim.newspapers_Changes)
+  * [dim.publisher](#dim.publisher)
+  * [dim.publisher$Changes](#dim.publisher_Changes)
+  * [dim.store](#dim.store)
+  * [dim.store$Changes](#dim.store_Changes)
+  * [dim.title](#dim.title)
+  * [dim.title$Changes](#dim.title_Changes)
+  * [fact.sales](#fact.sales)
+  * [fact.sales$Changes](#fact.sales_Changes)
   
 * [Views](#head_views)
   
@@ -40,7 +40,7 @@ Files:
 
 ### Tables <a name='head_tables'>
 
-#### dim.author <a name='dim_author'>
+#### dim.author <a name='dim.author'>
 
 Table info:
 
@@ -81,7 +81,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | DWH | author | I | 02/11/2017 15:57:17 | 02/11/2017 15:57:20 | S | DESKTOP-HCA06TJ\Pablo Corral | 23 | 0 | 0 |
 
-#### dim.author$Changes <a name='dim_author_Changes'>
+#### dim.author$Changes <a name='dim.author_Changes'>
 
 Table info:
 
@@ -122,7 +122,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dim.newspapers <a name='dim_newspapers'>
+#### dim.newspapers <a name='dim.newspapers'>
 
 Table info:
 
@@ -158,7 +158,7 @@ Logs:
 | DWH | newspapers | I | 02/11/2017 15:57:08 | 02/11/2017 15:57:09 | S | DESKTOP-HCA06TJ\Pablo Corral | 6 | 0 | 0 |
 | stg | newspapers | I | 02/11/2017 15:51:51 | 02/11/2017 15:51:52 | S | DESKTOP-HCA06TJ\Pablo Corral | 6 | 0 | 0 |
 
-#### dim.newspapers$Changes <a name='dim_newspapers_Changes'>
+#### dim.newspapers$Changes <a name='dim.newspapers_Changes'>
 
 Table info:
 
@@ -193,7 +193,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dim.publisher <a name='dim_publisher'>
+#### dim.publisher <a name='dim.publisher'>
 
 Table info:
 
@@ -230,7 +230,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | DWH | publisher | I | 02/11/2017 15:57:17 | 02/11/2017 15:57:20 | S | DESKTOP-HCA06TJ\Pablo Corral | 8 | 0 | 0 |
 
-#### dim.publisher$Changes <a name='dim_publisher_Changes'>
+#### dim.publisher$Changes <a name='dim.publisher_Changes'>
 
 Table info:
 
@@ -267,7 +267,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dim.store <a name='dim_store'>
+#### dim.store <a name='dim.store'>
 
 Table info:
 
@@ -305,7 +305,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | DWH | store | I | 02/11/2017 15:57:17 | 02/11/2017 15:57:20 | S | DESKTOP-HCA06TJ\Pablo Corral | 6 | 0 | 0 |
 
-#### dim.store$Changes <a name='dim_store_Changes'>
+#### dim.store$Changes <a name='dim.store_Changes'>
 
 Table info:
 
@@ -343,7 +343,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dim.title <a name='dim_title'>
+#### dim.title <a name='dim.title'>
 
 Table info:
 
@@ -385,7 +385,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | DWH | title | I | 02/11/2017 15:57:17 | 02/11/2017 15:57:20 | S | DESKTOP-HCA06TJ\Pablo Corral | 18 | 0 | 0 |
 
-#### dim.title$Changes <a name='dim_title_Changes'>
+#### dim.title$Changes <a name='dim.title_Changes'>
 
 Table info:
 
@@ -427,7 +427,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### fact.sales <a name='fact_sales'>
+#### fact.sales <a name='fact.sales'>
 
 Table info:
 
@@ -472,7 +472,7 @@ Logs:
 | DWH | sales | F | 02/11/2017 15:57:21 | 02/11/2017 15:57:23 | S | DESKTOP-HCA06TJ\Pablo Corral | 23 | 0 | 0 |
 | stg | sales | I | 02/11/2017 15:52:00 | 02/11/2017 15:52:06 | S | DESKTOP-HCA06TJ\Pablo Corral | 21 | 0 | 0 |
 
-#### fact.sales$Changes <a name='fact_sales_Changes'>
+#### fact.sales$Changes <a name='fact.sales_Changes'>
 
 Table info:
 

@@ -5,11 +5,11 @@
 
 * [Info](#head_info)
 * [Tables](#head_tables)
-  * [log.etl_table_load_info](#log_etl_table_load_info)
-  * [log.test_etl_table_load_info](#log_test_etl_table_load_info)
+  * [log.etl_table_load_info](#log.etl_table_load_info)
+  * [log.test_etl_table_load_info](#log.test_etl_table_load_info)
   
 * [Views](#head_views)
-  * [log.Tables](#log_Tables)
+  * [log.Tables](#log.Tables)
   
 
 ## Info <a name='head_info'>
@@ -31,7 +31,7 @@ Files:
 
 ### Tables <a name='head_tables'>
 
-#### log.etl_table_load_info <a name='log_etl_table_load_info'>
+#### log.etl_table_load_info <a name='log.etl_table_load_info'>
 
 Table info:
 
@@ -72,7 +72,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### log.test_etl_table_load_info <a name='log_test_etl_table_load_info'>
+#### log.test_etl_table_load_info <a name='log.test_etl_table_load_info'>
 
 Table info:
 
@@ -107,7 +107,7 @@ Logs:
 
 ### Views <a name='head_views'>
 
-#### log.Tables <a name='log_Tables'>
+#### log.Tables <a name='log.Tables'>
 
 View info:
 

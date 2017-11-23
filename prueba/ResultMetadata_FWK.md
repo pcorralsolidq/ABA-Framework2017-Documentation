@@ -20,7 +20,7 @@
 ### Home
 Documentation generated using the metadata from ABA2017 database.
 
-_Documentation created: 23/11/2017 15:58:40_
+_Documentation created: 23/11/2017 16:08:13_
 
 ### Extraction phase <a name='head_extraction_phase'>
 ####  Loaded Tables <a name='head_loaded_tables'>
@@ -40,12 +40,12 @@ _Documentation created: 23/11/2017 15:58:40_
 ####  Connections <a name='head_connections'>
 | Connection name | Connection string | DB Schemas |
 | --------------- | ----------------- | -----------|
-| [DWH-1](ResultMetadata_DWH.md) | Data Source=localhost;Initial Catalog=ABA2017_DWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False; | dim,fact |
+| [DWH-1](ResultMetadata_DWH1.md) | Data Source=localhost;Initial Catalog=ABA2017_DWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False; | dim,fact |
 | [HLP-1](ResultMetadata_HLP1.md) | Provider=SQLNCLI11.1;Data Source=localhost;Initial Catalog=ABA2017_HLP;Integrated Security=SSPI;Auto Translate=False; | bi |
 | [LOG-1](ResultMetadata_LOG.md) | Data Source=localhost;Initial Catalog=ABA2017_LOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False; |  |
-| [STG-1](ResultMetadata_STG.md) | Data Source=localhost;Initial Catalog=ABA2017_STG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False; | stg,di |
+| [STG-1](ResultMetadata_STG1.md) | Data Source=localhost;Initial Catalog=ABA2017_STG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False; | stg,di |
 | [HLP-2](ResultMetadata_HLP2.md) | Provider=SQLNCLI11.1;Data Source=localhost;Initial Catalog=ABA2017_HLP;Integrated Security=SSPI;Auto Translate=False; | mt |
-| [STG-2](ResultMetadata_STG.md) | Data Source=localhost;Initial Catalog=ABA2017_STG2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False; | stg,di |
+| [STG-2](ResultMetadata_STG2.md) | Data Source=localhost;Initial Catalog=ABA2017_STG2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False; | stg,di |
 | [HLP-3](ResultMetadata_HLP3.md) | Provider=SQLNCLI11.1;Data Source=localhost;Initial Catalog=CDC_Demo;Integrated Security=SSPI;Auto Translate=False; | dbo |
 | [HLP-4](ResultMetadata_HLP4.md) | Provider=SQLNCLI11.1;Data Source=localhost;Initial Catalog=CTC_Demo;Integrated Security=SSPI;Auto Translate=False; | dbo |
 

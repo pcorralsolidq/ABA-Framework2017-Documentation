@@ -237,7 +237,7 @@ Logs:
 
 ### Views <a name='head_views'>
 
-#### etl.vw_dim_newspapers {#head_etl_vw_dim_newspapers}
+#### etl.vw_dim_newspapers <a name='head_etl_vw_dim_newspapers'>
 
 View info:
 

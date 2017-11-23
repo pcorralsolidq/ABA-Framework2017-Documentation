@@ -138,7 +138,7 @@ Table info:
 
 | Table name | Schema | Owner | Creation date | Rows |
 | ---------- | ------ | ----- | ------------- | ---- |
-| lsn_time_mapping | cdc | cdc | 09/11/2017 17:43:50 | 235 |
+| lsn_time_mapping | cdc | cdc | 09/11/2017 17:43:50 | 239 |
 
 Columns:
 

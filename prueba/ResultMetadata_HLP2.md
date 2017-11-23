@@ -38,7 +38,7 @@ Files:
 
 ### Views <a name='head_views'>
 
-#### bi.authors {#head_bi_authors}
+#### bi.authors <a name='head_bi_authors'>
 
 View info:
 
@@ -88,7 +88,7 @@ CREATE VIEW bi.authors as SELECT [au_id] as pk_au_id
 
 
 
-#### bi.publishers {#head_bi_publishers}
+#### bi.publishers <a name='head_bi_publishers'>
 
 View info:
 
@@ -128,7 +128,7 @@ CREATE VIEW bi.publishers as SELECT [pub_id] as pk_pub_id
 
 
 
-#### bi.sales {#head_bi_sales}
+#### bi.sales <a name='head_bi_sales'>
 
 View info:
 
@@ -174,7 +174,7 @@ CREATE VIEW bi.sales as SELECT  CONCAT(stor_id,ord_num,title_id) as pk_id
 
 
 
-#### bi.stores {#head_bi_stores}
+#### bi.stores <a name='head_bi_stores'>
 
 View info:
 
@@ -217,7 +217,7 @@ CREATE VIEW bi.stores as SELECT [stor_id] as pk_stor_id
 
 
 
-#### bi.titleauthor {#head_bi_titleauthor}
+#### bi.titleauthor <a name='head_bi_titleauthor'>
 
 View info:
 
@@ -257,7 +257,7 @@ CREATE VIEW bi.titleauthor as SELECT CONCAT(au_id,title_id) as pk_id
 
 
 
-#### bi.titles {#head_bi_titles}
+#### bi.titles <a name='head_bi_titles'>
 
 View info:
 
@@ -312,7 +312,7 @@ CREATE VIEW bi.titles as SELECT [title_id] as pk_title_id
 
 
 
-#### mt.newspapers {#head_mt_newspapers}
+#### mt.newspapers <a name='head_mt_newspapers'>
 
 View info:
 

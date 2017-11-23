@@ -913,7 +913,7 @@ Logs:
 
 ### Views <a name='head_views'>
 
-#### etl.vw_dim_title {#head_etl_vw_dim_title}
+#### etl.vw_dim_title <a name='head_etl_vw_dim_title'>
 
 View info:
 
@@ -976,7 +976,7 @@ SELECT [pk_title_id] as idtitle
 
 
 
-#### etl.vw_dim_author {#head_etl_vw_dim_author}
+#### etl.vw_dim_author <a name='head_etl_vw_dim_author'>
 
 View info:
 
@@ -1036,7 +1036,7 @@ SELECT [pk_au_id] as idauthor
 
 
 
-#### etl.vw_dim_publisher {#head_etl_vw_dim_publisher}
+#### etl.vw_dim_publisher <a name='head_etl_vw_dim_publisher'>
 
 View info:
 
@@ -1084,7 +1084,7 @@ SELECT [pk_pub_id] as idpublisher
 
 
 
-#### etl.vw_dim_store {#head_etl_vw_dim_store}
+#### etl.vw_dim_store <a name='head_etl_vw_dim_store'>
 
 View info:
 
@@ -1135,7 +1135,7 @@ SELECT [pk_stor_id] as idstore
 
 
 
-#### etl.vw_fact_sales {#head_etl_vw_fact_sales}
+#### etl.vw_fact_sales <a name='head_etl_vw_fact_sales'>
 
 View info:
 

@@ -107,7 +107,7 @@ Logs:
 
 ### Views <a name='head_views'>
 
-#### log.Tables {#head_log_Tables}
+#### log.Tables <a name='head_log_Tables'>
 
 View info:
 

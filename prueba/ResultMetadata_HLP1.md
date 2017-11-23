@@ -7,13 +7,13 @@
 * [Tables](#head_tables)
   
 * [Views](#head_views)
-  * [bi.authors](#bi.authors)
-  * [bi.publishers](#bi.publishers)
-  * [bi.sales](#bi.sales)
-  * [bi.stores](#bi.stores)
-  * [bi.titleauthor](#bi.titleauthor)
-  * [bi.titles](#bi.titles)
-  * [mt.newspapers](#mt.newspapers)
+  * [bi.authors](#bi_authors)
+  * [bi.publishers](#bi_publishers)
+  * [bi.sales](#bi_sales)
+  * [bi.stores](#bi_stores)
+  * [bi.titleauthor](#bi_titleauthor)
+  * [bi.titles](#bi_titles)
+  * [mt.newspapers](#mt_newspapers)
   
 
 ## Info <a name='head_info'>

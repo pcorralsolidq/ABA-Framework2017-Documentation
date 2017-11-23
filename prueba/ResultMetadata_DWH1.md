@@ -4,24 +4,24 @@
 ## Database doc
 
 * [Info](#head_info)
-* [Tablas](#head_tables)
-  * [dim.author](#head_dim_author)
-  * [dim.author$Changes](#head_dim_author_Changes)
-  * [dim.newspapers](#head_dim_newspapers)
-  * [dim.newspapers$Changes](#head_dim_newspapers_Changes)
-  * [dim.publisher](#head_dim_publisher)
-  * [dim.publisher$Changes](#head_dim_publisher_Changes)
-  * [dim.store](#head_dim_store)
-  * [dim.store$Changes](#head_dim_store_Changes)
-  * [dim.title](#head_dim_title)
-  * [dim.title$Changes](#head_dim_title_Changes)
-  * [fact.sales](#head_fact_sales)
-  * [fact.sales$Changes](#head_fact_sales_Changes)
+* [Tables](#head_tables)
+  * [dim.author](#dim.author)
+  * [dim.author$Changes](#dim.author_Changes)
+  * [dim.newspapers](#dim.newspapers)
+  * [dim.newspapers$Changes](#dim.newspapers_Changes)
+  * [dim.publisher](#dim.publisher)
+  * [dim.publisher$Changes](#dim.publisher_Changes)
+  * [dim.store](#dim.store)
+  * [dim.store$Changes](#dim.store_Changes)
+  * [dim.title](#dim.title)
+  * [dim.title$Changes](#dim.title_Changes)
+  * [fact.sales](#fact.sales)
+  * [fact.sales$Changes](#fact.sales_Changes)
   
-* [Vistas](#head_vistas)
+* [Views](#head_views)
   
 
-## Info {#head_info}
+## Info <a name='head_info'>
 **ABA2017_DWH**
 
 DB Info:
@@ -38,9 +38,9 @@ Files:
 | ABA2017_DWH_log | 2 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\ABA2017_DWH_log.ldf |  | 102400 KB | 2147483648 KB | 102400 KB |
 | ABA2017_DWH_data | 3 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\ABA2017_DWH_data.ndf | SECONDARY | 102400 KB | Unlimited | 102400 KB |
 
-### Tables
+### Tables <a name='head_tables'>
 
-#### dim.author {#head_dim_author}
+#### dim.author <a name='dim.author'>
 
 Table info:
 
@@ -81,7 +81,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | DWH | author | I | 02/11/2017 15:57:17 | 02/11/2017 15:57:20 | S | DESKTOP-HCA06TJ\Pablo Corral | 23 | 0 | 0 |
 
-#### dim.author_Changes {#head_dim_author_Changes}
+#### dim.author$Changes <a name='dim.author_Changes'>
 
 Table info:
 
@@ -122,7 +122,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dim.newspapers {#head_dim_newspapers}
+#### dim.newspapers <a name='dim.newspapers'>
 
 Table info:
 
@@ -158,7 +158,7 @@ Logs:
 | DWH | newspapers | I | 02/11/2017 15:57:08 | 02/11/2017 15:57:09 | S | DESKTOP-HCA06TJ\Pablo Corral | 6 | 0 | 0 |
 | stg | newspapers | I | 02/11/2017 15:51:51 | 02/11/2017 15:51:52 | S | DESKTOP-HCA06TJ\Pablo Corral | 6 | 0 | 0 |
 
-#### dim.newspapers_Changes {#head_dim_newspapers_Changes}
+#### dim.newspapers$Changes <a name='dim.newspapers_Changes'>
 
 Table info:
 
@@ -193,7 +193,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dim.publisher {#head_dim_publisher}
+#### dim.publisher <a name='dim.publisher'>
 
 Table info:
 
@@ -230,7 +230,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | DWH | publisher | I | 02/11/2017 15:57:17 | 02/11/2017 15:57:20 | S | DESKTOP-HCA06TJ\Pablo Corral | 8 | 0 | 0 |
 
-#### dim.publisher_Changes {#head_dim_publisher_Changes}
+#### dim.publisher$Changes <a name='dim.publisher_Changes'>
 
 Table info:
 
@@ -267,7 +267,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dim.store {#head_dim_store}
+#### dim.store <a name='dim.store'>
 
 Table info:
 
@@ -305,7 +305,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | DWH | store | I | 02/11/2017 15:57:17 | 02/11/2017 15:57:20 | S | DESKTOP-HCA06TJ\Pablo Corral | 6 | 0 | 0 |
 
-#### dim.store_Changes {#head_dim_store_Changes}
+#### dim.store$Changes <a name='dim.store_Changes'>
 
 Table info:
 
@@ -343,7 +343,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dim.title {#head_dim_title}
+#### dim.title <a name='dim.title'>
 
 Table info:
 
@@ -385,7 +385,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | DWH | title | I | 02/11/2017 15:57:17 | 02/11/2017 15:57:20 | S | DESKTOP-HCA06TJ\Pablo Corral | 18 | 0 | 0 |
 
-#### dim.title_Changes {#head_dim_title_Changes}
+#### dim.title$Changes <a name='dim.title_Changes'>
 
 Table info:
 
@@ -427,7 +427,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### fact.sales {#head_fact_sales}
+#### fact.sales <a name='fact.sales'>
 
 Table info:
 
@@ -472,7 +472,7 @@ Logs:
 | DWH | sales | F | 02/11/2017 15:57:21 | 02/11/2017 15:57:23 | S | DESKTOP-HCA06TJ\Pablo Corral | 23 | 0 | 0 |
 | stg | sales | I | 02/11/2017 15:52:00 | 02/11/2017 15:52:06 | S | DESKTOP-HCA06TJ\Pablo Corral | 21 | 0 | 0 |
 
-#### fact.sales_Changes {#head_fact_sales_Changes}
+#### fact.sales$Changes <a name='fact.sales_Changes'>
 
 Table info:
 
@@ -513,5 +513,5 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
 
-### Vistas
+### Views <a name='head_views'>
 

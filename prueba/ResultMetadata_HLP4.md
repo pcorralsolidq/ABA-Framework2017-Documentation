@@ -4,13 +4,13 @@
 ## Database doc
 
 * [Info](#head_info)
-* [Tablas](#head_tables)
-  * [dbo.employee](#head_dbo_employee)
+* [Tables](#head_tables)
+  * [dbo.employee](#dbo.employee)
   
-* [Vistas](#head_vistas)
+* [Views](#head_views)
   
 
-## Info {#head_info}
+## Info <a name='head_info'>
 **CTC_Demo**
 
 DB Info:
@@ -26,9 +26,9 @@ Files:
 | CTC_DEMO | 1 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\CTC_DEMO.mdf | PRIMARY | 8192 KB | Unlimited | 65536 KB |
 | CTC_DEMO_log | 2 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\CTC_DEMO_log.ldf |  | 8192 KB | 2147483648 KB | 65536 KB |
 
-### Tables
+### Tables <a name='head_tables'>
 
-#### dbo.employee {#head_dbo_employee}
+#### dbo.employee <a name='dbo.employee'>
 
 Table info:
 
@@ -63,5 +63,5 @@ Logs:
 | stg | employee | I | 16/11/2017 16:05:11 | 16/11/2017 16:05:12 | S | DESKTOP-HCA06TJ\Pablo Corral | 43 | 0 | 0 |
 
 
-### Vistas
+### Views <a name='head_views'>
 

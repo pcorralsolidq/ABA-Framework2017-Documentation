@@ -15,7 +15,7 @@ Se han encontrado 1 errores.
 
 #### Test Results
 
-##### Test 1 {#head_test_1}
+##### Test 1 <a name='head_test_1'>
 NBi.NUnit.Runtime.CustomStackTraceAssertionException : Execution of the query doesnt match the expected result 
 
   Expected: 

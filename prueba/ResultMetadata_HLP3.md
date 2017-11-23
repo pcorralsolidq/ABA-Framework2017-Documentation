@@ -4,22 +4,22 @@
 ## Database doc
 
 * [Info](#head_info)
-* [Tablas](#head_tables)
-  * [dbo.systranschemas](#head_dbo_systranschemas)
-  * [cdc.change_tables](#head_cdc_change_tables)
-  * [cdc.ddl_history](#head_cdc_ddl_history)
-  * [cdc.lsn_time_mapping](#head_cdc_lsn_time_mapping)
-  * [cdc.captured_columns](#head_cdc_captured_columns)
-  * [cdc.index_columns](#head_cdc_index_columns)
-  * [dbo.writers](#head_dbo_writers)
-  * [cdc.dbo_writers_CT](#head_cdc_dbo_writers_CT)
-  * [dbo.cdc_states](#head_dbo_cdc_states)
-  * [dbo.employee](#head_dbo_employee)
+* [Tables](#head_tables)
+  * [dbo.systranschemas](#dbo.systranschemas)
+  * [cdc.change_tables](#cdc.change_tables)
+  * [cdc.ddl_history](#cdc.ddl_history)
+  * [cdc.lsn_time_mapping](#cdc.lsn_time_mapping)
+  * [cdc.captured_columns](#cdc.captured_columns)
+  * [cdc.index_columns](#cdc.index_columns)
+  * [dbo.writers](#dbo.writers)
+  * [cdc.dbo_writers_CT](#cdc.dbo_writers_CT)
+  * [dbo.cdc_states](#dbo.cdc_states)
+  * [dbo.employee](#dbo.employee)
   
-* [Vistas](#head_vistas)
+* [Views](#head_views)
   
 
-## Info {#head_info}
+## Info <a name='head_info'>
 **CDC_Demo**
 
 DB Info:
@@ -35,9 +35,9 @@ Files:
 | CDC_Demo | 1 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\CDC_Demo.mdf | PRIMARY | 8192 KB | Unlimited | 65536 KB |
 | CDC_Demo_log | 2 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\CDC_Demo_log.ldf |  | 73728 KB | 2147483648 KB | 65536 KB |
 
-### Tables
+### Tables <a name='head_tables'>
 
-#### dbo.systranschemas {#head_dbo_systranschemas}
+#### dbo.systranschemas <a name='dbo.systranschemas'>
 
 Table info:
 
@@ -65,7 +65,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### cdc.change_tables {#head_cdc_change_tables}
+#### cdc.change_tables <a name='cdc.change_tables'>
 
 Table info:
 
@@ -102,7 +102,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### cdc.ddl_history {#head_cdc_ddl_history}
+#### cdc.ddl_history <a name='cdc.ddl_history'>
 
 Table info:
 
@@ -132,13 +132,13 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### cdc.lsn_time_mapping {#head_cdc_lsn_time_mapping}
+#### cdc.lsn_time_mapping <a name='cdc.lsn_time_mapping'>
 
 Table info:
 
 | Table name | Schema | Owner | Creation date | Rows |
 | ---------- | ------ | ----- | ------------- | ---- |
-| lsn_time_mapping | cdc | cdc | 09/11/2017 17:43:50 | 216 |
+| lsn_time_mapping | cdc | cdc | 09/11/2017 17:43:50 | 235 |
 
 Columns:
 
@@ -161,7 +161,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### cdc.captured_columns {#head_cdc_captured_columns}
+#### cdc.captured_columns <a name='cdc.captured_columns'>
 
 Table info:
 
@@ -192,7 +192,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### cdc.index_columns {#head_cdc_index_columns}
+#### cdc.index_columns <a name='cdc.index_columns'>
 
 Table info:
 
@@ -220,7 +220,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dbo.writers {#head_dbo_writers}
+#### dbo.writers <a name='dbo.writers'>
 
 Table info:
 
@@ -259,7 +259,7 @@ Logs:
 | stg | writers | F | 13/11/2017 9:17:31 | 13/11/2017 9:17:31 | F | DESKTOP-HCA06TJ\Pablo Corral |  |  |  |
 | stg | writers | F | 13/11/2017 8:53:07 | 13/11/2017 8:53:08 | S | DESKTOP-HCA06TJ\Pablo Corral |  |  |  |
 
-#### cdc.dbo_writers_CT {#head_cdc_dbo_writers_CT}
+#### cdc.dbo_writers_CT <a name='cdc.dbo_writers_CT'>
 
 Table info:
 
@@ -298,7 +298,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dbo.cdc_states {#head_dbo_cdc_states}
+#### dbo.cdc_states <a name='dbo.cdc_states'>
 
 Table info:
 
@@ -324,7 +324,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### dbo.employee {#head_dbo_employee}
+#### dbo.employee <a name='dbo.employee'>
 
 Table info:
 
@@ -359,5 +359,5 @@ Logs:
 | stg | employee | I | 16/11/2017 16:05:11 | 16/11/2017 16:05:12 | S | DESKTOP-HCA06TJ\Pablo Corral | 43 | 0 | 0 |
 
 
-### Vistas
+### Views <a name='head_views'>
 

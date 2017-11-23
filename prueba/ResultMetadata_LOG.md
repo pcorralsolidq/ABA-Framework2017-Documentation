@@ -4,15 +4,15 @@
 ## Database doc
 
 * [Info](#head_info)
-* [Tablas](#head_tables)
-  * [log.etl_table_load_info](#head_log_etl_table_load_info)
-  * [log.test_etl_table_load_info](#head_log_test_etl_table_load_info)
+* [Tables](#head_tables)
+  * [log.etl_table_load_info](#log.etl_table_load_info)
+  * [log.test_etl_table_load_info](#log.test_etl_table_load_info)
   
-* [Vistas](#head_vistas)
-  * [log.Tables](#head_log_Tables)
+* [Views](#head_views)
+  * [log.Tables](#log.Tables)
   
 
-## Info {#head_info}
+## Info <a name='head_info'>
 **ABA2017_LOG**
 
 DB Info:
@@ -29,9 +29,9 @@ Files:
 | ABA2017_LOG_log | 2 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\ABA2017_LOG_log.ldf |  | 102400 KB | 2147483648 KB | 102400 KB |
 | ABA2017_LOG_data | 3 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\ABA2017_LOG_data.ndf | SECONDARY | 102400 KB | Unlimited | 102400 KB |
 
-### Tables
+### Tables <a name='head_tables'>
 
-#### log.etl_table_load_info {#head_log_etl_table_load_info}
+#### log.etl_table_load_info <a name='log.etl_table_load_info'>
 
 Table info:
 
@@ -72,7 +72,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### log.test_etl_table_load_info {#head_log_test_etl_table_load_info}
+#### log.test_etl_table_load_info <a name='log.test_etl_table_load_info'>
 
 Table info:
 
@@ -105,7 +105,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
 
-### Vistas
+### Views <a name='head_views'>
 
 #### log.Tables {#head_log_Tables}
 

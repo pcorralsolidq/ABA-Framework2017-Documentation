@@ -4,41 +4,41 @@
 ## Database doc
 
 * [Info](#head_info)
-* [Tablas](#head_tables)
-  * [stg.autores](#head_stg_autores)
-  * [stg.autores$Changes](#head_stg_autores_Changes)
-  * [stg.autores$Errors](#head_stg_autores_Errors)
-  * [stg.writers](#head_stg_writers)
-  * [stg.writers$Changes](#head_stg_writers_Changes)
-  * [stg.writers$Errors](#head_stg_writers_Errors)
-  * [stg.authors](#head_stg_authors)
-  * [stg.authors$Changes](#head_stg_authors_Changes)
-  * [stg.authors$Errors](#head_stg_authors_Errors)
-  * [stg.publishers](#head_stg_publishers)
-  * [stg.publishers$Changes](#head_stg_publishers_Changes)
-  * [stg.publishers$Errors](#head_stg_publishers_Errors)
-  * [stg.sales](#head_stg_sales)
-  * [stg.sales$Changes](#head_stg_sales_Changes)
-  * [stg.sales$Errors](#head_stg_sales_Errors)
-  * [stg.stores](#head_stg_stores)
-  * [stg.stores$Changes](#head_stg_stores_Changes)
-  * [stg.stores$Errors](#head_stg_stores_Errors)
-  * [stg.titleauthor](#head_stg_titleauthor)
-  * [stg.titleauthor$Changes](#head_stg_titleauthor_Changes)
-  * [stg.titleauthor$Errors](#head_stg_titleauthor_Errors)
-  * [stg.titles](#head_stg_titles)
-  * [stg.titles$Changes](#head_stg_titles_Changes)
-  * [stg.titles$Errors](#head_stg_titles_Errors)
+* [Tables](#head_tables)
+  * [stg.autores](#stg.autores)
+  * [stg.autores$Changes](#stg.autores_Changes)
+  * [stg.autores$Errors](#stg.autores_Errors)
+  * [stg.writers](#stg.writers)
+  * [stg.writers$Changes](#stg.writers_Changes)
+  * [stg.writers$Errors](#stg.writers_Errors)
+  * [stg.authors](#stg.authors)
+  * [stg.authors$Changes](#stg.authors_Changes)
+  * [stg.authors$Errors](#stg.authors_Errors)
+  * [stg.publishers](#stg.publishers)
+  * [stg.publishers$Changes](#stg.publishers_Changes)
+  * [stg.publishers$Errors](#stg.publishers_Errors)
+  * [stg.sales](#stg.sales)
+  * [stg.sales$Changes](#stg.sales_Changes)
+  * [stg.sales$Errors](#stg.sales_Errors)
+  * [stg.stores](#stg.stores)
+  * [stg.stores$Changes](#stg.stores_Changes)
+  * [stg.stores$Errors](#stg.stores_Errors)
+  * [stg.titleauthor](#stg.titleauthor)
+  * [stg.titleauthor$Changes](#stg.titleauthor_Changes)
+  * [stg.titleauthor$Errors](#stg.titleauthor_Errors)
+  * [stg.titles](#stg.titles)
+  * [stg.titles$Changes](#stg.titles_Changes)
+  * [stg.titles$Errors](#stg.titles_Errors)
   
-* [Vistas](#head_vistas)
-  * [etl.vw_dim_title](#head_etl_vw_dim_title)
-  * [etl.vw_dim_author](#head_etl_vw_dim_author)
-  * [etl.vw_dim_publisher](#head_etl_vw_dim_publisher)
-  * [etl.vw_dim_store](#head_etl_vw_dim_store)
-  * [etl.vw_fact_sales](#head_etl_vw_fact_sales)
+* [Views](#head_views)
+  * [etl.vw_dim_title](#etl.vw_dim_title)
+  * [etl.vw_dim_author](#etl.vw_dim_author)
+  * [etl.vw_dim_publisher](#etl.vw_dim_publisher)
+  * [etl.vw_dim_store](#etl.vw_dim_store)
+  * [etl.vw_fact_sales](#etl.vw_fact_sales)
   
 
-## Info {#head_info}
+## Info <a name='head_info'>
 **ABA2017_STG**
 
 DB Info:
@@ -55,9 +55,9 @@ Files:
 | ABA2017_STG_log | 2 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\ABA2017_STG_log.ldf |  | 102400 KB | 2147483648 KB | 102400 KB |
 | ABA2017_STG_data | 3 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\ABA2017_STG_data.ndf | SECONDARY | 102400 KB | Unlimited | 102400 KB |
 
-### Tables
+### Tables <a name='head_tables'>
 
-#### stg.autores {#head_stg_autores}
+#### stg.autores <a name='stg.autores'>
 
 Table info:
 
@@ -103,7 +103,7 @@ Logs:
 | stg | autores | F | 09/11/2017 15:56:28 | 09/11/2017 15:56:29 | F | DESKTOP-HCA06TJ\Pablo Corral |  |  |  |
 | stg | autores | F | 09/11/2017 14:27:01 | 09/11/2017 14:27:01 | S | DESKTOP-HCA06TJ\Pablo Corral |  |  |  |
 
-#### stg.autores_Changes {#head_stg_autores_Changes}
+#### stg.autores$Changes <a name='stg.autores_Changes'>
 
 Table info:
 
@@ -139,7 +139,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.autores_Errors {#head_stg_autores_Errors}
+#### stg.autores$Errors <a name='stg.autores_Errors'>
 
 Table info:
 
@@ -175,7 +175,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.writers {#head_stg_writers}
+#### stg.writers <a name='stg.writers'>
 
 Table info:
 
@@ -217,7 +217,7 @@ Logs:
 | stg | writers | F | 13/11/2017 9:17:31 | 13/11/2017 9:17:31 | F | DESKTOP-HCA06TJ\Pablo Corral |  |  |  |
 | stg | writers | F | 13/11/2017 8:53:07 | 13/11/2017 8:53:08 | S | DESKTOP-HCA06TJ\Pablo Corral |  |  |  |
 
-#### stg.writers_Changes {#head_stg_writers_Changes}
+#### stg.writers$Changes <a name='stg.writers_Changes'>
 
 Table info:
 
@@ -253,7 +253,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.writers_Errors {#head_stg_writers_Errors}
+#### stg.writers$Errors <a name='stg.writers_Errors'>
 
 Table info:
 
@@ -289,7 +289,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.authors {#head_stg_authors}
+#### stg.authors <a name='stg.authors'>
 
 Table info:
 
@@ -328,7 +328,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | stg | authors | I | 02/11/2017 15:52:00 | 02/11/2017 15:52:06 | S | DESKTOP-HCA06TJ\Pablo Corral | 23 | 0 | 0 |
 
-#### stg.authors_Changes {#head_stg_authors_Changes}
+#### stg.authors$Changes <a name='stg.authors_Changes'>
 
 Table info:
 
@@ -364,7 +364,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.authors_Errors {#head_stg_authors_Errors}
+#### stg.authors$Errors <a name='stg.authors_Errors'>
 
 Table info:
 
@@ -400,7 +400,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.publishers {#head_stg_publishers}
+#### stg.publishers <a name='stg.publishers'>
 
 Table info:
 
@@ -433,7 +433,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | stg | publishers | I | 02/11/2017 15:52:00 | 02/11/2017 15:52:06 | S | DESKTOP-HCA06TJ\Pablo Corral | 8 | 0 | 0 |
 
-#### stg.publishers_Changes {#head_stg_publishers_Changes}
+#### stg.publishers$Changes <a name='stg.publishers_Changes'>
 
 Table info:
 
@@ -465,7 +465,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.publishers_Errors {#head_stg_publishers_Errors}
+#### stg.publishers$Errors <a name='stg.publishers_Errors'>
 
 Table info:
 
@@ -497,7 +497,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.sales {#head_stg_sales}
+#### stg.sales <a name='stg.sales'>
 
 Table info:
 
@@ -533,7 +533,7 @@ Logs:
 | DWH | sales | F | 02/11/2017 15:57:21 | 02/11/2017 15:57:23 | S | DESKTOP-HCA06TJ\Pablo Corral | 23 | 0 | 0 |
 | stg | sales | I | 02/11/2017 15:52:00 | 02/11/2017 15:52:06 | S | DESKTOP-HCA06TJ\Pablo Corral | 21 | 0 | 0 |
 
-#### stg.sales_Changes {#head_stg_sales_Changes}
+#### stg.sales$Changes <a name='stg.sales_Changes'>
 
 Table info:
 
@@ -567,7 +567,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.sales_Errors {#head_stg_sales_Errors}
+#### stg.sales$Errors <a name='stg.sales_Errors'>
 
 Table info:
 
@@ -601,7 +601,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.stores {#head_stg_stores}
+#### stg.stores <a name='stg.stores'>
 
 Table info:
 
@@ -635,7 +635,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | stg | stores | I | 02/11/2017 15:52:00 | 02/11/2017 15:52:06 | S | DESKTOP-HCA06TJ\Pablo Corral | 6 | 0 | 0 |
 
-#### stg.stores_Changes {#head_stg_stores_Changes}
+#### stg.stores$Changes <a name='stg.stores_Changes'>
 
 Table info:
 
@@ -668,7 +668,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.stores_Errors {#head_stg_stores_Errors}
+#### stg.stores$Errors <a name='stg.stores_Errors'>
 
 Table info:
 
@@ -701,7 +701,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.titleauthor {#head_stg_titleauthor}
+#### stg.titleauthor <a name='stg.titleauthor'>
 
 Table info:
 
@@ -734,7 +734,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | stg | titleauthor | I | 02/11/2017 15:52:00 | 02/11/2017 15:52:06 | S | DESKTOP-HCA06TJ\Pablo Corral | 18 | 0 | 0 |
 
-#### stg.titleauthor_Changes {#head_stg_titleauthor_Changes}
+#### stg.titleauthor$Changes <a name='stg.titleauthor_Changes'>
 
 Table info:
 
@@ -766,7 +766,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.titleauthor_Errors {#head_stg_titleauthor_Errors}
+#### stg.titleauthor$Errors <a name='stg.titleauthor_Errors'>
 
 Table info:
 
@@ -798,7 +798,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.titles {#head_stg_titles}
+#### stg.titles <a name='stg.titles'>
 
 Table info:
 
@@ -836,7 +836,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | stg | titles | I | 02/11/2017 15:52:00 | 02/11/2017 15:52:06 | S | DESKTOP-HCA06TJ\Pablo Corral | 18 | 0 | 0 |
 
-#### stg.titles_Changes {#head_stg_titles_Changes}
+#### stg.titles$Changes <a name='stg.titles_Changes'>
 
 Table info:
 
@@ -873,7 +873,7 @@ Logs:
 | Schema Name | Table Name | Type | Start Date | End Date | Status | Loaded by | Inserted Rows | Updated Rows | Deleted Rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
-#### stg.titles_Errors {#head_stg_titles_Errors}
+#### stg.titles$Errors <a name='stg.titles_Errors'>
 
 Table info:
 
@@ -911,7 +911,7 @@ Logs:
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 
 
-### Vistas
+### Views <a name='head_views'>
 
 #### etl.vw_dim_title {#head_etl_vw_dim_title}
 

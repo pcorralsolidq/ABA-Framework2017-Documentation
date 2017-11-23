@@ -9,7 +9,7 @@
   * [Load patterns](#head_load_patterns)
   * [Data types source vs stg](#head_data_types_source_vs_stg)
   * [Source Primary keys](#head_source_primary_keys)
-  * [Active for](#head_active_load_creation_orquestator)
+  * [Active for](#head_active_for)
 * [Load phase](#head_load_phase)
   * [Dimensions](#head_dimensions)
   * [Fact tables](#head_fact_tables)
@@ -20,10 +20,10 @@
 ### Home
 Documentation generated using the metadata from ABA2017 database.
 
-_Documentation created: 23/11/2017 13:52:35_
+_Documentation created: 23/11/2017 15:58:40_
 
-### Extraction phase {#head_extraction_phase}
-####  Loaded Tables {#head_loaded_tables}
+### Extraction phase <a name='head_extraction_phase'>
+####  Loaded Tables <a name='head_loaded_tables'>
 | Source object schema | Source object name | Destination table schema | Destination table name | Source type id | Helper id |
 | -------------------- | ------------------ | ------------------------ | ---------------------- | -------------- | --------- |
 | 'dbo' | [cdc_states](ResultMetadata_HLP3.md#dbo.cdc_states) | STG | [cdc_states](ResultMetadata_STG1.md#stg.cdc_states) | VIW | 3 |
@@ -37,7 +37,7 @@ _Documentation created: 23/11/2017 13:52:35_
 
 [Wiki Extraction Phase](http://www.solidq.com/wiki/aba/etl-with-aba-framework)
 
-####  Connections {#head_connections}
+####  Connections <a name='head_connections'>
 | Connection name | Connection string | DB Schemas |
 | --------------- | ----------------- | -----------|
 | [DWH-1](ResultMetadata_DWH.md) | Data Source=localhost;Initial Catalog=ABA2017_DWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False; | dim,fact |
@@ -53,7 +53,7 @@ _Documentation created: 23/11/2017 13:52:35_
 
 **Information Source Table:** md.Connections
 
-####  Load patterns {#head_load_patterns}
+####  Load patterns <a name='head_load_patterns'>
 | Source object schema | Source object name | Load pattern id | Load pattern |
 | -------------------- | ------------------ | --------------- | ------------ |
 | dbo | [cdc_states](ResultMetadata_HLP3.md#dbo.cdc_states) | DLH | [Differential Lookup Hash](http://www.solidq.com/wiki/aba/etl-with-aba-framework#dlh) |
@@ -65,7 +65,7 @@ _Documentation created: 23/11/2017 13:52:35_
 
 **Information Source Table:** md.Source_Schema
 
-####  Data types source vs stg {#head_data_types_source_vs_stg}
+####  Data types source vs stg <a name='head_data_types_source_vs_stg'>
 | Helper id | Table schema name | Table name | Column name | Destination column name | Data type | Destination data type |
 | --------- | ----------------- | ---------- | ----------- | ----------------------- | --------- | --------------------- |
 | 3 | dbo | cdc_states | name | name | nvarchar(256) | nvarchar(256) |
@@ -95,7 +95,7 @@ _Documentation created: 23/11/2017 13:52:35_
 
 **Information Source Table:** md.Source_Schema
 
-####  Source Primary Keys {#head_source_primary_keys}
+####  Source Primary Keys <a name='head_source_primary_keys'>
 | Source object Schema | Source object name | Primary key columns |
 | -------------------- | ------------------ | ------------------- |
 | dbo |[cdc_states](ResultMetadata_HLP3.md#dbo.cdc_states) |  |
@@ -109,7 +109,7 @@ _Documentation created: 23/11/2017 13:52:35_
 
 [Wiki E Phase naming conventions](http://www.solidq.com/wiki/aba/etl-with-aba-framework#naming)
 
-####  Active for load creation orquestator {#head_active_load_creation_orquestator}
+####  Active for load creation orquestator <a name='head_active_for'>
 | Source object schema | Source object name | Active for load | Active for creation | Active for orquestator |
 | -------------------- | ------------------ | --------------- | ------------------- | ---------------------- |
 | dbo | [cdc_states](ResultMetadata_HLP3.md#dbo.cdc_states) | Y | Y | Y
@@ -123,8 +123,8 @@ _Documentation created: 23/11/2017 13:52:35_
 
 [Wiki Extraction Phase Info columns](http://www.solidq.com/wiki/aba/framework-databases#epi)
 
-### Load phase {#head_load_phase}
-####  Dimensions {#head_dimensions}
+### Load phase <a name='head_load_phase'>
+####  Dimensions <a name='head_dimensions'>
 | Source table name | Destination table name | Active for creation | Active for load | Primary key columns | Detect deletes | Order group |
 | ----------------- | ---------------------- | ------------------- | --------------- | ------------------- | -------------- | ----------- |
 
@@ -136,7 +136,7 @@ _Documentation created: 23/11/2017 13:52:35_
 
 [Wiki Naming Conventions Loading Phase](http://www.solidq.com/wiki/aba/etl-with-aba-framework#naming-loading)
 
-####  Fact tables {#head_fact_tables}
+####  Fact tables <a name='head_fact_tables'>
 | Source table name | Destination table name | Active for creation | Active for load | Primary key columns | Detect deletes | Order group |
 | ----------------- | ---------------------- | ------------------- | --------------- | ------------------- | -------------- | ----------- |
 | [vw_fact_sales](ResultMetadata_STG1.md#etl.vw_fact_sales) | [sales](ResultMetadata_DWH1.md#dim.sales) | N | Y | idsales | Y | 1 |
@@ -149,18 +149,19 @@ _Documentation created: 23/11/2017 13:52:35_
 
 [Wiki Naming Conventions Loading Phase](http://www.solidq.com/wiki/aba/etl-with-aba-framework#naming-loading)
 
-####  SCD {#scd}
+####  SCD <a name='head_scd'>
 | Source table name | Destination column name | Change type | Type description |
 | ----------------- | ----------------------- | ----------- | ---------------- |
 
 
-**Information Source DB:** ABA2017_MD </br>
+**Information Source DB:** ABA2017_MD
+
 **Information Source Table:** md.dimensions_load_phase_info_columns
 
 [Wiki Slowly Change Dimensions](http://www.solidq.com/wiki/aba/etl-with-aba-framework#scd)
 
 
-### Unit Tests {#head_unit_tests}
+### Unit Tests <a name='head_unit_tests'>
 | Execution id | Test name  | Start date | End date | Result | Message |
 | ------------ | ---------- | ---------- | -------- | ------ | ------- |
 | 1 | NBi.NUnit.Runtime.TestSuite.Source.Helper.PK .Persons.HLP-1.STG-1 | 04/10/2017 9:19:01 | 01/01/0001 0:00:00 | Error | [See message](#head_test_1) | 
@@ -170,7 +171,7 @@ _Documentation created: 23/11/2017 13:52:35_
 
 #### Test Results
 
-##### Test 1 {#head_test_1}
+##### Test 1 <'head_test_1'>
 NBi.NUnit.Runtime.CustomStackTraceAssertionException : Execution of the query doesnt match the expected result 
 
   Expected: 
@@ -210,7 +211,7 @@ ResultSet with 2 rows
 
 [Wiki Unit Tests](http://www.solidq.com/wiki/aba/automatedtesting/#main_characteristics)
 
-### Log Table {#head_log_table}
+### Log Table <a name='head_log_table'>
 | Schema name | Table name | Type | Start date | End date | Status | Loaded by | Inserted rows | Updated rows | Deleted rows |
 | ----------- | ---------- | ---- | ---------- | -------- | ------ | --------- | ------------- | ------------ | ------------ |
 | stg | employee | I | 16/11/2017 16:14:47 | 16/11/2017 16:14:48 | S | DESKTOP-HCA06TJ\\Pablo Corral | <inserted_rows>0 | <updated_rows>0 | <deleted_rows>1 |

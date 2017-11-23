@@ -4,19 +4,19 @@
 ## Database doc
 
 * [Info](#head_info)
-* [Tablas](#head_tables)
+* [Tables](#head_tables)
   
-* [Vistas](#head_vistas)
-  * [bi.authors](#head_bi_authors)
-  * [bi.publishers](#head_bi_publishers)
-  * [bi.sales](#head_bi_sales)
-  * [bi.stores](#head_bi_stores)
-  * [bi.titleauthor](#head_bi_titleauthor)
-  * [bi.titles](#head_bi_titles)
-  * [mt.newspapers](#head_mt_newspapers)
+* [Views](#head_views)
+  * [bi.authors](#bi.authors)
+  * [bi.publishers](#bi.publishers)
+  * [bi.sales](#bi.sales)
+  * [bi.stores](#bi.stores)
+  * [bi.titleauthor](#bi.titleauthor)
+  * [bi.titles](#bi.titles)
+  * [mt.newspapers](#mt.newspapers)
   
 
-## Info {#head_info}
+## Info <a name='head_info'>
 **ABA2017_HLP**
 
 DB Info:
@@ -33,10 +33,10 @@ Files:
 | ABA2017_HLP_log | 2 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\ABA2017_HLP_log.ldf |  | 102400 KB | 2147483648 KB | 102400 KB |
 | ABA2017_HLP_data | 3 | C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\ABA2017_HLP_data.ndf | SECONDARY | 102400 KB | Unlimited | 102400 KB |
 
-### Tables
+### Tables <a name='head_tables'>
 
 
-### Vistas
+### Views <a name='head_views'>
 
 #### bi.authors {#head_bi_authors}
 
